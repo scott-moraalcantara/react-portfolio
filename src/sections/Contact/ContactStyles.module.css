@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+textarea, input:not([type='submit']){
+    height: 50px;
+    padding-left: 16px;
+    width: 250px;
+}
+
+textarea {
+    padding-top: 16px;
+    resize: none;
+    height: 250px;
+
+}
+
+input, textarea {
+    border-radius: 20px;
+    border: #888 1px solid;
+    box-sizing: border-box;
+    justify-self: center;
+    background-color: var(--background-color);
+    color: var(--form-text-color);
+}
+
+::placeholder{
+    color: var(--form-text-color);
+}
+
+input[type='submit']{
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    border: none;
+}
